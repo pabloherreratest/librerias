@@ -1,0 +1,9 @@
+import { addDays,format } from 'date-fns';
+
+const fecha = new Date();
+const nuevaFecha = addDays(fecha, 5); // Devuelve una nueva fecha sin modificar la original
+console.log(nuevaFecha);
+console.log(fecha); // La fecha original sigue igual
+const fechaFormateada = format(nuevaFecha, 'yyyy-MM-dd'); // Formatear
+
+console.log(fechaFormateada); // Ejemplo: 2024-02-09
