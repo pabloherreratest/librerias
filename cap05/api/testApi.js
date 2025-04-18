@@ -2,7 +2,7 @@
 import { expect } from 'chai';
 import { obtenerProductoPorID } from './productos.js';
 import { schemaProducto } from './schemaProducto.js';
-import Ajv from 'ajv';
+import Ajv from 'ajv'; // Validador de JSON Schema para asegurar que la respuesta de la API cumple con la estructura esperada
 
 const ajv = new Ajv({ addFormats: true });
 
